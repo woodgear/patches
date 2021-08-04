@@ -1,0 +1,26 @@
+pkgsets/go1.16.3/global/pkg/mod/sigs.k8s.io/controller-runtime@v0.3.1-0.20191011155846-b2bc3490f2e3/pkg/cache/internal/cache_reader.go
+59:             fmt.Printf("#wg cachereder try to get %v  %v but not fond\n", c.groupVersionKind, key)
+
+pkgsets/go1.16.3/global/pkg/mod/sigs.k8s.io/controller-runtime@v0.3.1-0.20191011155846-b2bc3490f2e3/pkg/cache/internal/informers_map.go
+158:            fmt.Printf("#wg could not find this informer %v create it now \n", gvk)
+166:            fmt.Printf("#wg informer of %v not synced\n", gvk)
+190:    fmt.Printf("#wg create lw of gvk %s\n", gvk)
+
+pkgsets/go1.16.3/global/pkg/mod/k8s.io/client-go@v0.16.6/rest/request.go
+830:            fmt.Printf("#wg send request %s %s status %v\n", req.Method, req.URL,result.statusCode)
+
+pkgsets/go1.16.3/global/pkg/mod/k8s.io/client-go@v0.16.6/tools/cache/reflector.go
+120:    klog.V(3).Infof("#wg Starting reflector %v (%s) from %s periodv %v", r.expectedType, r.resyncPeriod, r.name, r.period)
+351:                    klog.V(4).Infof("#wg get a new resource %v %v", event.Object.GetObjectKind().GroupVersionKind(), event.Type)
+
+pkgsets/go1.16.3/global/pkg/mod/k8s.io/client-go@v0.16.6/tools/cache/shared_informer.go
+472:                                            klog.V(4).Infof("#wg get ns fail %v", err)
+476:                                            klog.V(4).Infof("#wg get name fail %v", err)
+479:                                    klog.V(4).Infof("#wg informer add object ns %v name %v gvk %v write to store", ns, name, gvk)
+
+pkgsets/go1.16.3/global/pkg/mod/k8s.io/client-go@v0.16.6/tools/cache/thread_safe_store.go
+98:             fmt.Printf("#wg get %s from threadsaftmap exists %v\n", key, exists)
+
+pkgsets/go1.16.3/global/pkg/mod/k8s.io/apimachinery@v0.16.7-beta.0/pkg/watch/streamwatcher.go
+128:            fmt.Printf("#wg get a watch event for %v action %v\n",obj.GetObjectKind().GroupVersionKind(),action)
+
